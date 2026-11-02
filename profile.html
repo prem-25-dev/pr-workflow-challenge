@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prem | Project Atlas Team</title>
+  <style>
+    :root {
+      --bg: #eef2f7;
+      --card: #ffffff;
+      --text: #1f2933;
+      --muted: #52606d;
+      --accent: #2563eb;
+      --chip: #e0e9ff;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 16px;
+      background: var(--bg);
+      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      color: var(--text);
+    }
+
+    .profile-card {
+      width: 100%;
+      max-width: 380px;
+      padding: 32px 28px;
+      background: var(--card);
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
+      text-align: center;
+    }
+
+    .avatar {
+      width: 88px;
+      height: 88px;
+      margin: 0 auto 16px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: var(--accent);
+      color: #fff;
+      font-size: 2rem;
+      font-weight: 700;
+    }
+
+    .profile-card h1 {
+      margin: 0;
+      font-size: 1.6rem;
+    }
+
+    .role {
+      margin: 4px 0 16px;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .intro {
+      margin: 0 0 20px;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    .skills h2 {
+      margin: 0 0 10px;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+    }
+
+    .skills ul {
+      list-style: none;
+      margin: 0 0 24px;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .skills li {
+      padding: 6px 14px;
+      border-radius: 999px;
+      background: var(--chip);
+      color: var(--accent);
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    .profile-link {
+      display: inline-block;
+      padding: 10px 22px;
+      border-radius: 8px;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .profile-link:hover,
+    .profile-link:focus-visible {
+      background: #1d4ed8;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <article class="profile-card">
+      <div class="avatar" aria-hidden="true">P</div>
+      <header>
+        <h1>Prem</h1>
+        <p class="role">Software Developer</p>
+      </header>
+
+      <p class="intro">
+        Hi! I'm Prem, a developer on the Project Atlas team. I enjoy building
+        clean, accessible web interfaces and practical tools that make
+        everyday work easier.
+      </p>
+
+      <section class="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>HTML/CSS</li>
+          <li>JavaScript</li>
+          <li>Git</li>
+        </ul>
+      </section>
+
+      <footer>
+        <a class="profile-link" href="https://github.com/prem-25-dev" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </footer>
+    </article>
+  </main>
+</body>
+</html>
